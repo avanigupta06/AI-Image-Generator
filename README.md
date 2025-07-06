@@ -25,6 +25,7 @@ A simple React-based web app that generates images from text prompts using **Goo
 
 ## 🖼️ Demo
 
+![1](https://github.com/user-attachments/assets/6f75d1b8-492d-4047-bbc5-ab60cc94d320)
 
 
 ---
