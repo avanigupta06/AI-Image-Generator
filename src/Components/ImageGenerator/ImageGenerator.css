@@ -1,0 +1,174 @@
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.header {
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span {
+    color: rgb(56, 149, 56);
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-loading img {
+    width: 512px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    width: 1000px;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1F3540;
+    padding: 0 20px;
+}
+
+.search-input {
+    width: 600px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.generator-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: rgb(56, 149, 56);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.generator-btn:hover {
+    background: rgb(44, 130, 44);
+}
+
+.loading-bar {
+    width: 0px;
+    height: 8px;
+    background: rgb(56, 149, 56);
+}
+
+.loading-text {
+    display: none;
+}
+
+.loading-bar-full {
+    width: 512px;
+    height: 8px;
+    background: rgb(56, 149, 56);
+    transition: 15s;
+}
+
+.loading-text-full {
+    font-size: 18px;
+}
+
+
+
+/* ✅ Download button container */
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ✅ Download button styling */
+.download-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(56, 149, 56);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:hover {
+    background-color: rgb(44, 130, 44);
+}
+
+
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .ai-image-generator {
+        margin-top: 40px;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .header {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .search-box {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 30px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .generator-btn {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .img-loading img {
+        width: 90%;
+    }
+
+    .loading-bar-full {
+        width: 90%;
+    }
+
+    .download-btn {
+        width: 90%;
+        text-align: center;
+    }
+}
+
