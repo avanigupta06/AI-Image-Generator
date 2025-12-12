@@ -25,10 +25,23 @@
     align-items: center;
 }
 
-.img-loading img {
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+.img-loading img,
+.image img {
     width: 512px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    object-fit: contain;
 }
 
 .search-box {
@@ -158,8 +171,14 @@
         font-size: 18px;
     }
 
-    .img-loading img {
+    .image {
+        min-height: 300px;
+    }
+
+    .img-loading img,
+    .image img {
         width: 90%;
+        max-width: 512px;
     }
 
     .loading-bar-full {
